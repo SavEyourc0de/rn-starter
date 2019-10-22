@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, View, StyleSheet, FlatList} from 'react-native';
+import {Text, View, StyleSheet, FlatList, Button} from 'react-native';
 
-const ListScreen = () => {
+const ListScreen = (props) => {
     const friends = [
         { name: 'friend 1', age: Math.floor(Math.random() * 25) + 20},
         { name: 'friend 2', age: Math.floor(Math.random() * 25) + 20},
