@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-const ComponentsScreen = () => {
+const ComponentsScreen = (props) => {
     return (
     <View>
         <Text style={styles.textStyle}>Getting started with react native</Text>

@@ -3,7 +3,7 @@ import {View, Button, Text, StyleSheet} from 'react-native';
 import ImageDetail from '../components/ImageDetail';
 
 
-const ImageScreen = (props) => {
+const ImageScreen = () => {
     return (
         <View>
             <ImageDetail 
