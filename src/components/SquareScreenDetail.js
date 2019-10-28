@@ -5,8 +5,8 @@ const SquareScreenDetail = ({color, onIncrease, onDecrease}) => {
     return (
         <View>
             <Text h1>{color}</Text>
-            <Button title={`More ${color}`} onPress={() => onIncrease()}/>
-            <Button title={`Less ${color}`} onPress={() => onDecrease()}/>
+            <Button title={`More ${color}`} onPress={() => onIncrease() }/>
+            <Button title={`Less ${color}`} onPress={() => onDecrease() }/>
         </View>
     );
 }
