@@ -6,7 +6,7 @@ const COLOR_INCREMENT = 20;
 const COLOR_DECREMENT = 20;
 
 const reducer = (state, action) => {
-    switch(state.colorToChange) {
+    switch(action.colorToChange) {
         case 'red':
             return {...state, red: state.red + action.amount};
         case 'green':
@@ -26,7 +26,7 @@ const SquareScreen = () => {
         <View>
             <SquareScreenDetail 
                 color={'red'}
-                onIncrease={() => dispatch({colorToChange: 'red', amount: COLOR_INCREMENT})}
+                onIncrease={() => dispatch({ colorToChange: 'red', amount: COLOR_INCREMENT})}
                 onDecrease={() => dispatch({ colorToChange: 'red', amount: -1 * COLOR_DECREMENT})}
             />
             <SquareScreenDetail 
