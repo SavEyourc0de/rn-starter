@@ -15,6 +15,8 @@ const reducer = (state, action) => {
 const CounterScreen = () => {
     const [counter, setCounter]= useState(0);
     const [state, dispatch] = useReducer(reducer, {count: 0});
+    console.log(counter);
+    
 
     return (
         <View>
@@ -28,7 +30,7 @@ const CounterScreen = () => {
             <Button
                 style={styles.button}
                 title='Decrease'
-                onPress={() => dispatch({type: 'dec'})}
+                onPress={() => dispatch({type: 'dec'})} //setCounter(counter - 1)
             />
         </View>
     );
