@@ -23,17 +23,22 @@ const styles = StyleSheet.create({
     },
     viewFirstStyle: {
         borderWidth: 1,
-        borderColor: 'red',
+        borderColor: '#e64935',
+        backgroundColor: '#e64935',
         flex: 4
     },
     viewSecondtStyle: {
         borderWidth: 1,
-        borderColor: 'red',
-        flex: 4
+        borderColor: 'lightgreen',
+        flex: 4,
+        //position: "absolute",
+        fontSize: 18,
+        backgroundColor: 'lightgreen'
     },
     viewThirdStyle: {
         borderWidth: 1,
-        borderColor: 'red',
+        borderColor: 'purple',
+        backgroundColor: 'purple',
         flex: 2
     },
     textStyle: {
